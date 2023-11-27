@@ -1,0 +1,67 @@
+
+
+
+
+/* Start Team */
+.our-team {
+    padding-top: var(--main-padding-top); 
+    padding-bottom: var(--main-padding-bottom);
+    position: relative; 
+}
+.our-team .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+.our-team .box {
+    padding: 20px;
+    background: linear-gradient(to right, #f7f6f6, rgb(167, 121, 167));
+    box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
+    border-radius: 10px;
+    position: relative;
+    opacity: 0;
+    transition: var(--main-transition);
+}
+.our-team .box:hover {
+    box-shadow: 10px 10px 4px rgb(0 0 0 / 20%);
+}
+.our-team .box img {
+    position: absolute;
+    right: -10px;
+    top: -30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 7px solid white;
+    transition: var(--main-transition);
+}
+.our-team .box:hover img {
+    filter: grayscale(70%);
+    width: 110px;
+    height: 110px;
+}
+.our-team .box h3 {
+    margin: 0 0 10px;
+    color: var(--main-color);
+    font-size: 20px;
+    transition: var(--main-transition);
+}
+.our-team .box:hover h3 {
+    color: var(--main-color-alt);
+    font-size: 22px;
+    font-weight: bold;
+}
+.our-team .box .title {
+    color: #777;
+    display: block;
+    margin-bottom: 10px;
+}
+.our-team .box .rate .filled {
+    color: #ffc107;
+}
+.our-team .box p{
+    line-height: 1.5;
+    color: rgb(66, 66, 66);
+    margin-bottom: 0;
+}
+/* End Team */

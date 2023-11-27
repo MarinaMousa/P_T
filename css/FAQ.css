@@ -1,0 +1,151 @@
+
+
+body {
+width: 100%;
+height: fit-content;
+margin: 0;
+padding: 0;
+background-color: #ebecf0;
+overflow-x: hidden;
+}
+.center {
+width: 100%;
+height: fit-content;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.stack-area {
+width: 100%;
+height: 300vh;
+position: relative;
+display: flex;
+justify-content: center;
+}
+.right,
+.left {
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+position: sticky;
+top: 0;
+box-sizing: border-box;
+flex-basis: 50%;
+}
+.cards {
+width: 100%;
+height: 100%;
+position: relative;
+}
+.title {
+    /* width: 420px; */
+    font-size: 50px;
+    font-family: poppins;
+    font-weight: bold;
+    text-align: center;
+    }
+.card {
+width: 350px;
+height: 350px;
+box-sizing: border-box;
+padding: 35px;
+border-radius: 6mm;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+position: absolute;
+top: 50%;
+left: 50%;
+transition: 0.5s ease-in-out;
+}
+@media (max-width: 767px) {
+    .title {
+        font-size: 28px;
+        margin-top: 70px;
+    }
+    .card {
+        width: 250px;
+        height: 250px;
+    }
+}
+@media (max-width: 500px) {
+    .title {
+        font-size: 20px;
+    }
+    .card {
+        width: 180px;
+        height: 200px;
+        padding: 10px 20px 20px 20px;
+    }
+}
+.one {
+background: var(--main-color);
+}
+.two {
+background: var(--section-color);
+}
+.card:nth-child(1) {
+z-index: 7;
+}
+.card:nth-child(2) {
+z-index: 6;
+}
+.card:nth-child(3) {
+/* background: rgb(186, 113, 245); */
+z-index: 5;
+}
+.card:nth-child(4) {
+/* background: rgb(247, 92, 208); */
+z-index: 4;
+}
+.card:nth-child(5) {
+/* background: rgb(247, 219, 92); */
+z-index: 3;
+}
+.card:nth-child(6) {
+/* background: rgb(92, 247, 157); */
+z-index: 2;
+}
+.card:nth-child(7) {
+/* background: rgb(92, 185, 247); */
+z-index: 1;
+}
+.sub {
+font-family: poppins;
+font-size: 20px;
+font-weight: 700;
+}
+.ask {
+    color: rgb(54, 54, 54);
+}
+.ans {
+font-family: poppins;
+font-size: 18px;
+color: white;
+}
+.card.active {
+transform-origin: bottom left;
+}
+.left {
+align-items: center;
+flex-direction: column;
+}
+.sub {
+/* width: 420px; */
+font-family: poppins;
+font-size: 12px;
+margin-top: 0;
+}
+@media (max-width: 500px) {
+    .sub-title {
+        font-size: 8px;
+    }
+    .ask {
+        font-size: 12px;
+    }
+    .ans {
+        font-size: 12px;
+    }
+}
